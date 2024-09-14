@@ -1,0 +1,61 @@
+.daily {
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
+    background: var(--bg);
+    padding: 20px;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+    gap: 20px;
+
+    &__item {
+        border-radius: 10px;
+        background: rgba(71, 147, 255, 0.2);
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        @media (max-width: 500px) {
+            align-items: center;
+        }
+        &_day {
+            color: var(--text);
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 22px;
+        }
+
+        &_date {
+            color: rgb(147, 156, 176);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17px;
+        }
+
+        &_img {
+            width: 48px;
+            height: 48px;
+        }
+
+        &_tempmax {
+            color: var(--text);
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 22px;
+        }
+
+        &_tempmin {
+            color: rgb(147, 156, 176);
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 16px;
+        }
+
+        &_info {
+            color: rgb(147, 156, 176);
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 16px;
+        }
+    }
+}
